@@ -1,0 +1,124 @@
+.cart-popup {
+    position: fixed;
+    top: 20px; /* Ajustez cette valeur pour l'aligner avec la bannière */
+    right:  0;
+    width: 282px;
+    background-color: #a71717; /* Utilisation d'une couleur de fond foncée pour une meilleure visibilité */
+    color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    z-index: 1000;
+    padding: 20px;
+  }
+  .cart-header-th {
+    box-sizing: border-box;
+    color: blanchedalmond;
+}
+.cart-span-total {
+    color: chartreuse;
+    font-size: 21px;
+    text-decoration: dotted;
+    
+    font-weight: bold;
+}
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-btn-action {
+    width: 15px;
+    height: 15px;
+  }
+  .cart-header h2 {
+    margin: -4px;
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+  }
+  .cart-td {
+    color: black;
+    font-size: 79%;
+    background: #e8ffd4;
+  }
+  .cart-total {
+    color: black;
+    font-size: 100%;
+    text-decoration: dotted;
+    background: #e8ffd4;
+  }
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-actions {
+    width: 20px;
+    height: 20px;
+  }
+  .cart-content {
+    max-height: 400px;
+    overflow-y: auto;
+    color: rgb(15, 4, 4);
+  }
+  
+  .cart-footer {
+    display: ruby;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: aliceblue;
+  }
+  
+  .cart-footer p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .cart-popup.rounded {
+    border-radius: 10px;
+  }
+  
+  .btn img {
+    width: 20px;
+    height: 20px;
+  }
+  /* Style pour le popup sur les écrans mobiles */
+@media (max-width: 600px) {
+  .cart-popup {
+      width: 281px;
+  }
+}
+
+.command_side {
+  margin-top: 20px;
+  text-align: center;
+  background: darkgoldenrod;
+  border-radius: 18px;
+}
+
+.command_button {
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 18px;
+ 
+}
+
+.command_side h3 {
+  margin-bottom: 4px;
+}
+
+.rounded-input {
+  width: calc(100% - 40px);
+  text-align: center;
+  color: black;
+  padding: 7px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  box-sizing: border-box;
+}

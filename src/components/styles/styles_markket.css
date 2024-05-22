@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080a08;
+}
+
+.container_panier {
+    padding-right: 15px;
+    padding-left: 15px;
+    background: black;
+    margin-top: -9px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #108b0c;
+    color: #ffffff;
+    width: auto;
+}
+
+header .left img {
+    height: 50px;
+}
+
+header .center h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+header .right p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-slide.active {
+    opacity: 1;
+}
+/* Média query pour les écrans plus petits */
+@media only screen and (max-width: 768px) {
+    .banner-container {
+        height: 120px; /* Hauteur pour les écrans mobiles */
+    }
+}
+/* Ajout des styles pour la Select List */
+
+.select-list {
+    margin: 20px;
+    text-align: center;
+}
+
+.select-list label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+}
+
+.select-list select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Ajout des styles pour la liste des produits */
+
+.product-list {
+    /* margin: 10px; */
+    text-align: center;
+    display: list-item;
+    background: black;
+}
+
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    background: green;
+    color: white;
+    border-radius: 24px;
+}
+
+.product-card {
+    border: 1px lightcyan;
+    margin: 4px;
+    padding: 4px;
+    /* width: 185px; */
+    flex: none;
+    display: ruby-text;
+    text-align: left;
+    /* border-radius: 10%; */
+}
+.product-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Pour s'assurer que l'image remplit le conteneur sans être déformée */
+}
+
+.product-image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 0px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 6px 1px;
+    text-align: -webkit-center;
+}
+
+.product-card p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.product-card button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #45a049;
+}
+
+/* Ajout des styles pour le panier */
+
+.cart {
+    margin: 20px;
+    text-align: center;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart th, .cart td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart th {
+    background-color: #f2f2f2;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Ajout des styles pour le pop-up de paiement */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Carte Google */
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+#orderButton {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#orderButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#orderButton:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group .btn {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.button-group .btn:last-child {
+    margin-right: 0;
+}
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.payment-option img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

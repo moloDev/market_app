@@ -1,0 +1,34 @@
+.select-list {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.select-list label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #94d21e;
+}
+
+.select-list select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+    color: #aeb128;
+    background: #0c0505;
+}
+
+.select-list button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #141814;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.select-list button:hover {
+    background-color: #e0a800;
+}

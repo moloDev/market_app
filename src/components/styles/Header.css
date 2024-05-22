@@ -1,0 +1,24 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #108b0c;
+    color: #ffffff;
+    width: auto;
+}
+
+header .left img {
+    height: 50px;
+}
+
+header .center h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+header .right p {
+    margin: 0;
+    font-size: 14px;
+}
